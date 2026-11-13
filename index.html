@@ -1,25 +1,74 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>个人主页 · 测试版</title>
-  <style>
-    body {
-      max-width: 42rem;
-      margin: 12vh auto 0;
-      padding: 0 1.25rem;
-      font: 1rem/1.75 system-ui, sans-serif;
-      color: #182822;
-      background: #f7f8f5;
-    }
-    h1 { font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.2; }
-  </style>
+  <title>Jack Ma | ホーム</title>
+  <meta name="description" content="日本在住のシニア iOS エンジニア。iOS・Android の開発リード、動画の性能改善、個人開発の Daynest を紹介します。">
+  <link rel="canonical" href="https://jack--ma.github.io/">
+  <link rel="alternate" hreflang="ja" href="https://jack--ma.github.io/">
+  <link rel="alternate" hreflang="zh-CN" href="https://jack--ma.github.io/index-zh.html">
+  <link rel="alternate" hreflang="en" href="https://jack--ma.github.io/index-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://jack--ma.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="Jack Ma | ホーム">
+  <meta property="og:description" content="日本在住のシニア iOS エンジニア。iOS・Android の開発リード、動画の性能改善、個人開発の Daynest を紹介します。">
+  <meta property="og:url" content="https://jack--ma.github.io/">
+  <meta property="og:image" content="https://jack--ma.github.io/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jack Ma | Senior iOS Engineer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main>
-    <h1>个人主页</h1>
-    <p>这是用于验证 GitHub Pages 发布流程的测试页面。</p>
+<body class="home-page">
+  <header class="home-toolbar">
+    <div class="page-controls">
+      <label class="theme-picker" hidden>外観
+        <select>
+          <option value="auto">自動</option>
+          <option value="light">ライト</option>
+          <option value="dark">ダーク</option>
+        </select>
+      </label>
+      <nav class="language-nav" aria-label="言語">
+        <a href="index-zh.html" lang="zh-CN" hreflang="zh-CN">中文</a>
+        <a href="./" lang="ja" hreflang="ja" aria-current="page">日本語</a>
+        <a href="index-en.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main class="home">
+    <header class="intro">
+      <h1>Jack Ma</h1>
+      <p class="role">シニア iOS エンジニア · モバイル開発リード</p>
+      <p class="location">日本</p>
+      <p class="bio">iOS アプリの設計、音声・動画、パフォーマンス改善が専門です。メッセージアプリの iOS 版を立ち上げ、4名のチームで iOS・Android の開発とリリースをリードしています。</p>
+      <div class="profile-links">
+        <a href="resume-ja.html">職務経歴</a>
+        <a href="https://github.com/Jack--Ma">GitHub</a>
+        <a href="mailto:zhaoxiangma86@gmail.com">メール</a>
+        <a href="https://www.linkedin.com/in/mazhaoxiang">LinkedIn</a>
+      </div>
+    </header>
+    <section class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">主なプロジェクト</h2>
+      <article>
+        <h3>メッセージアプリ｜iOS 版の立ち上げとモバイル開発</h3>
+        <p>iOS プロジェクトの作成から初回リリースまで約8か月。共通 SDK を複数のアプリで再利用し、会話一覧の更新時間を70%短縮（アプリ実測）。</p>
+      </article>
+      <article>
+        <h3>Daynest｜家計簿アプリ</h3>
+        <p>SwiftUI で個人開発した家計簿アプリで、オフライン記帳と iPhone・iPad 間の同期に対応。AI で帳簿を検索し、画像や PDF の明細は下書きを確認してから記帳。</p>
+      </article>
+      <article>
+        <h3>西瓜視頻（Xigua Video）｜動画制作・投稿</h3>
+        <p>動画投稿フローを再構築し、通常の通信環境で投稿画面を開いてからアップロード完了までの時間を50%短縮。4K 動画圧縮時のピークメモリ使用量を60%削減し、修正案は編集 SDK に採用。</p>
+      </article>
+    </section>
   </main>
 </body>
 </html>

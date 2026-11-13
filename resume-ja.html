@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jack Ma | 職務経歴</title>
+  <meta name="description" content="Jack Ma の職務経歴。iOS アプリの立ち上げ、iOS・Android の開発リード、動画の性能改善、AI を活用した個人開発。">
+  <link rel="canonical" href="https://jack--ma.github.io/resume-ja.html">
+  <link rel="alternate" hreflang="ja" href="https://jack--ma.github.io/resume-ja.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://jack--ma.github.io/resume-zh.html">
+  <link rel="alternate" hreflang="en" href="https://jack--ma.github.io/resume-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://jack--ma.github.io/resume-ja.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="Jack Ma | 職務経歴">
+  <meta property="og:description" content="Jack Ma の職務経歴。iOS アプリの立ち上げ、iOS・Android の開発リード、動画の性能改善、AI を活用した個人開発。">
+  <meta property="og:url" content="https://jack--ma.github.io/resume-ja.html">
+  <meta property="og:image" content="https://jack--ma.github.io/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jack Ma | Senior iOS Engineer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="resume-page" id="top">
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="resume-links">
+        <a href="./">ホーム</a>
+        <a href="https://github.com/Jack--Ma">GitHub</a>
+        <a href="mailto:zhaoxiangma86@gmail.com">メール</a>
+        <a href="https://www.linkedin.com/in/mazhaoxiang">LinkedIn</a>
+      </div>
+      <div class="page-controls">
+        <label class="theme-picker" hidden>外観
+          <select>
+            <option value="auto">自動</option>
+            <option value="light">ライト</option>
+            <option value="dark">ダーク</option>
+          </select>
+        </label>
+        <nav class="language-nav" aria-label="言語">
+          <a href="resume-zh.html" lang="zh-CN" hreflang="zh-CN">中文</a>
+          <a href="resume-ja.html" lang="ja" hreflang="ja" aria-current="page">日本語</a>
+          <a href="resume-en.html" lang="en" hreflang="en">English</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="layout">
+    <aside>
+      <nav aria-label="目次">
+        <p>目次</p>
+        <a href="#profile">職務要約</a>
+        <a href="#experience">職務経歴</a>
+        <a href="#projects">個人開発</a>
+        <a href="#skills">技術・ツール</a>
+        <a href="#education">学歴・語学</a>
+      </nav>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="intro">
+        <h1>Jack Ma</h1>
+        <p class="role">シニア iOS エンジニア · モバイル開発リード</p>
+        <p class="location">日本</p>
+      </header>
+      <section id="profile">
+        <h2>職務要約</h2>
+        <p>モバイルアプリ開発歴8年以上、Swift の実務経験5年。iOS の設計、音声・動画、パフォーマンス改善が専門です。メッセージアプリの iOS 版を立ち上げ、会話一覧の更新時間を70%短縮（アプリ実測）。ByteDance では4K 動画圧縮時のピークメモリ使用量を60%削減しました。</p>
+      </section>
+      <section id="experience">
+        <h2>職務経歴</h2>
+        <article class="resume-entry">
+          <h3>日本のソフトウェア企業</h3>
+          <p>2023年〜現在 · モバイル開発リード / iOS エンジニア</p>
+          <p>4名のチームで iOS・Android の開発とリリースを担当。入社当初は React Native アプリの開発に参加。</p>
+          <ul>
+            <li><strong>iOS 版の立ち上げと共通 SDK：</strong> ネイティブ iOS 版の技術選定と設計を主導し、プロジェクトの作成から約8か月で App Store に初回リリース。Swift のプロトコルと依存性注入で機能間の依存関係とアプリ固有の設定を分離し、共通 SDK を複数のアプリで再利用。</li>
+            <li><strong>会話一覧の高速化：</strong> 会話一覧の更新時間を70%短縮（アプリ実測）。WCDB での一括取得、初期表示分の先読み、メッセージプレビューのキャッシュで実現。</li>
+            <li><strong>暗号化動画の再生：</strong> 最初のフレームの表示まで8.7秒から0.7秒に短縮（ローカル比較）。メディア SDK を改修し、ダウンロードと並行して復号・再生する方式に変更。</li>
+            <li><strong>ビルド時間の短縮：</strong> Xcode Cloud のタスク開始からアーカイブ成功までの時間を40%短縮。CocoaPods から Swift Package Manager への依存関係の移行を推進。</li>
+            <li><strong>複数端末への着信対応：</strong> 1台で応答すると、ほかの端末の着信が止まる仕組みを実現。初期版の通話シグナリングを設計し、iOS 側の実装と Android・バックエンド担当との調整を担当。</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <h3>ByteDance｜西瓜視頻（Xigua Video）</h3>
+          <p>2017年7月〜2022年9月 · iOS エンジニア → シニア iOS エンジニア</p>
+          <ul>
+            <li><strong>動画投稿フロー：</strong> 通常の通信環境で、投稿画面を開いてからアップロードが完了するまでの時間を50%短縮。圧縮とアップロードを並行化し、投稿タスクの永続化により、画面を離れた後の処理継続と再起動後のアップロード再開に対応。</li>
+            <li><strong>4K 動画圧縮：</strong> 4K 動画圧縮時のピークメモリ使用量を60%削減。Instruments と編集 SDK のソースコードで原因を特定し、端末のメモリ容量に応じた修正を検証し、編集 SDK に反映。</li>
+            <li><strong>動画制作機能のコンポーネント化：</strong> 編集と投稿を分離し、サンプルアプリでの単独開発・デバッグに対応。後続の編集機能で使える Undo / Redo の共通モデルを設計。</li>
+            <li><strong>チームリードと育成：</strong> 5〜6名の iOS チームをリードし、技術計画、分担、スケジュールを担当。新人4名のメンターを務め、新卒採用の2名を本採用まで支援。</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <h3>Philips｜機器連携アプリ</h3>
+          <p>2016年1月〜9月 · iOS 開発インターン</p>
+          <p>空気質モニターと離乳食メーカーの連携アプリで、測定データの表示などの機能開発と iPhone・iPad への対応を担当。</p>
+        </article>
+      </section>
+      <section id="projects">
+        <h2>個人開発</h2>
+        <article class="resume-entry">
+          <h3>Daynest｜SwiftUI 家計簿アプリ</h3>
+          <p>2026年から開発 · 未リリース</p>
+          <ul>
+            <li>要件定義、設計、受け入れ条件の策定から SwiftUI での実装まで一人で担当。GRDB でオフライン記帳、CloudKit で端末間同期に対応。</li>
+            <li>OpenAI Responses API のツール呼び出しで、自然言語での帳簿検索と画像・PDF の明細読み取りに対応。ユーザーが確認した下書きは手入力と同じ検証・トランザクションで保存し、実行結果の記録で再試行時の二重登録を防止。</li>
+          </ul>
+        </article>
+      </section>
+      <section id="skills">
+        <h2>技術・ツール</h2>
+        <ul>
+          <li><strong>iOS 開発：</strong> Swift, Objective-C, UIKit, SwiftUI, Combine</li>
+          <li><strong>設計・並行処理：</strong> モジュール設計、共通 SDK、依存性注入、Swift Concurrency、GCD</li>
+          <li><strong>通信・ストレージ：</strong> URLSession, WebSocket, WCDB, GRDB, CloudKit</li>
+          <li><strong>音声・動画と性能改善：</strong> AVFoundation、CallKit、動画圧縮、音声ルーティング、Instruments</li>
+          <li><strong>開発基盤と AI 活用：</strong> Swift Package Manager、XCTest、GitHub Actions、Codex、Claude Code、Agent Skills、LLM のツール呼び出し</li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>学歴・語学</h2>
+        <p>電子科技大学（中国）でソフトウェア工学の学士号を取得。</p>
+        <p>中国語は業務上のコミュニケーションと技術文書の作成。日本語は JLPT N2。英語は技術文書とソースコードの読解。</p>
+      </section>
+      <footer><a href="#top">ページ上部へ ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>

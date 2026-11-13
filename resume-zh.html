@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jack Ma｜职业履历</title>
+  <meta name="description" content="Jack Ma 的职业履历，涵盖 iOS 从零搭建、双端交付、视频性能优化和 AI 研发实践。">
+  <link rel="canonical" href="https://jack--ma.github.io/resume-zh.html">
+  <link rel="alternate" hreflang="ja" href="https://jack--ma.github.io/resume-ja.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://jack--ma.github.io/resume-zh.html">
+  <link rel="alternate" hreflang="en" href="https://jack--ma.github.io/resume-en.html">
+  <link rel="alternate" hreflang="x-default" href="https://jack--ma.github.io/resume-ja.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="Jack Ma｜职业履历">
+  <meta property="og:description" content="Jack Ma 的职业履历，涵盖 iOS 从零搭建、双端交付、视频性能优化和 AI 研发实践。">
+  <meta property="og:url" content="https://jack--ma.github.io/resume-zh.html">
+  <meta property="og:image" content="https://jack--ma.github.io/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jack Ma | Senior iOS Engineer">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="resume-page" id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="resume-links">
+        <a href="index-zh.html">个人主页</a>
+        <a href="https://github.com/Jack--Ma">GitHub</a>
+        <a href="mailto:zhaoxiangma86@gmail.com">邮箱</a>
+        <a href="https://www.linkedin.com/in/mazhaoxiang">LinkedIn</a>
+      </div>
+      <div class="page-controls">
+        <label class="theme-picker" hidden>外观
+          <select>
+            <option value="auto">自动</option>
+            <option value="light">日间</option>
+            <option value="dark">夜间</option>
+          </select>
+        </label>
+        <nav class="language-nav" aria-label="语言">
+          <a href="resume-zh.html" lang="zh-CN" hreflang="zh-CN" aria-current="page">中文</a>
+          <a href="resume-ja.html" lang="ja" hreflang="ja">日本語</a>
+          <a href="resume-en.html" lang="en" hreflang="en">English</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="layout">
+    <aside>
+      <nav aria-label="履历目录">
+        <p>目录</p>
+        <a href="#profile">职业概述</a>
+        <a href="#experience">工作经历</a>
+        <a href="#projects">个人项目</a>
+        <a href="#skills">专业技能</a>
+        <a href="#education">教育与语言</a>
+      </nav>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="intro">
+        <h1>Jack Ma</h1>
+        <p class="role">资深 iOS 工程师 · 客户端团队负责人</p>
+        <p class="location">日本</p>
+      </header>
+      <section id="profile">
+        <h2>职业概述</h2>
+        <p>8 年以上移动端开发经验，5 年 Swift 经验，专注 iOS 架构、音视频与性能优化。主导即时通信 App 的 iOS 端从零上线，会话列表刷新耗时实测降低 70%。曾在字节跳动将 4K 视频压缩峰值内存降低 60%。</p>
+      </section>
+      <section id="experience">
+        <h2>工作经历</h2>
+        <article class="resume-entry">
+          <h3>日本软件公司</h3>
+          <p>2023 年至今 · 客户端团队负责人 / iOS 开发</p>
+          <p>带领 4 人团队交付 iOS 和 Android 版本。此前参与 React Native 产品开发。</p>
+          <ul>
+            <li><strong>iOS 首版与公共 SDK：</strong>主导原生选型和 iOS 工程搭建，从工程初始化到 App Store 首版上架约 8 个月。通过 Swift 协议与依赖注入隔离业务依赖和 App 配置，抽取公共 SDK 供多个 App 复用。</li>
+            <li><strong>会话列表性能：</strong>列表刷新耗时降低 70%（App 实测）。通过 WCDB 批量读取、首屏预载与消息预览缓存减少查询。</li>
+            <li><strong>加密视频播放：</strong>首帧耗时从 8.7 秒降至 0.7 秒（本地对照）。重构媒体 SDK，支持边下载边分块解密播放。</li>
+            <li><strong>构建效率：</strong>Xcode Cloud 从任务启动到归档成功的耗时降低 40%。推进依赖从 CocoaPods 迁移至 Swift Package Manager。</li>
+            <li><strong>多设备来电：</strong>实现一台设备接听后，其余设备自动停止响铃。设计首版通话信令并实现 iOS 端，推动 Android 和服务端补齐处理。</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <h3>字节跳动｜西瓜视频</h3>
+          <p>2017.07—2022.09 · iOS 开发工程师 → 高级开发工程师</p>
+          <ul>
+            <li><strong>视频发布：</strong>正常网络下，从进入发布页到上传完成的耗时减少 50%。将压缩与上传并行，并通过任务持久化支持离开页面后继续处理及重启续传。</li>
+            <li><strong>4K 压缩：</strong>将 4K 视频压缩峰值内存降低 60%。用 Instruments 和 SDK 源码定位内存问题，按机型内存容量调整压缩策略，对照验证后推动 SDK 团队采纳。</li>
+            <li><strong>创作组件化：</strong>拆分剪辑和发布组件，通过示例工程支持独立开发调试。设计撤销与重做模型，供后续剪辑功能沿用。</li>
+            <li><strong>技术带队：</strong>后期带领 5–6 人 iOS 小组，制定技术计划并负责分工与排期。累计担任 4 位新人的导师，协助 2 位校招生转正。</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <h3>飞利浦｜智能设备配套应用</h3>
+          <p>2016.01—2016.09 · iOS 开发实习生</p>
+          <p>参与空气质量检测设备与婴儿辅食机配套 App 的开发，负责数据展示等业务功能及 iPhone、iPad 适配。</p>
+        </article>
+      </section>
+      <section id="projects">
+        <h2>个人项目</h2>
+        <article class="resume-entry">
+          <h3>Daynest｜SwiftUI 记账 App</h3>
+          <p>2026 年起 · 未发布</p>
+          <ul>
+            <li>独立负责产品需求、架构与验收，使用 SwiftUI 开发 iPhone 和 iPad 应用。使用 GRDB 支持离线记账，通过 CloudKit 同步。</li>
+            <li>接入 OpenAI Responses API 工具调用，支持自然语言查账和图片、PDF 账单识别。识别结果经用户确认后，走与手动入账相同的校验和事务，并通过操作回执防止重试时重复入账。</li>
+          </ul>
+        </article>
+      </section>
+      <section id="skills">
+        <h2>专业技能</h2>
+        <ul>
+          <li><strong>iOS 开发：</strong>Swift、Objective-C、UIKit、SwiftUI、Combine。</li>
+          <li><strong>架构与并发：</strong>模块化、公共 SDK、依赖注入、Swift Concurrency、GCD。</li>
+          <li><strong>网络与存储：</strong>URLSession、WebSocket、WCDB、GRDB、CloudKit。</li>
+          <li><strong>音视频与性能：</strong>AVFoundation、CallKit、视频压缩、音频路由、Instruments。</li>
+          <li><strong>工程与 AI 研发：</strong>Swift Package Manager、XCTest、GitHub Actions、Codex、Claude Code、Agent Skills、LLM 工具调用。</li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>教育与语言</h2>
+        <p>电子科技大学 · 软件工程本科。</p>
+        <p>中文用于工作沟通与技术文档。日语 JLPT N2。英语可阅读技术文档及代码。</p>
+      </section>
+      <footer><a href="#top">返回顶部 ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>
