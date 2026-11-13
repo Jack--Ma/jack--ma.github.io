@@ -10,12 +10,14 @@
   --accent-text: #fff;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
   line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   background: var(--paper);
   color: var(--text);
 }
 
 :root:lang(ja) {
-  font-family: "Hiragino Sans", Meiryo, "Yu Gothic UI", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, "Yu Gothic UI", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
 }
 
 :root[data-theme="light"] { color-scheme: light; }
