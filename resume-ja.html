@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jack Ma | 職務経歴</title>
-  <meta name="description" content="Jack Ma の職務経歴。iOS アプリの立ち上げ、iOS・Android の開発リード、動画の性能改善、AI を活用した個人開発。">
+  <meta name="description" content="Jack Ma の職務経歴。iOS アプリの 0 → 1 立ち上げと設計、音声・動画とパフォーマンス改善、モバイル開発リード、AI を活用した開発。">
   <link rel="canonical" href="https://jack--ma.github.io/resume-ja.html">
   <link rel="alternate" hreflang="ja" href="https://jack--ma.github.io/resume-ja.html">
   <link rel="alternate" hreflang="zh-CN" href="https://jack--ma.github.io/resume-zh.html">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:title" content="Jack Ma | 職務経歴">
-  <meta property="og:description" content="Jack Ma の職務経歴。iOS アプリの立ち上げ、iOS・Android の開発リード、動画の性能改善、AI を活用した個人開発。">
+  <meta property="og:description" content="Jack Ma の職務経歴。iOS アプリの 0 → 1 立ち上げと設計、音声・動画とパフォーマンス改善、モバイル開発リード、AI を活用した開発。">
   <meta property="og:url" content="https://jack--ma.github.io/resume-ja.html">
   <meta property="og:image" content="https://jack--ma.github.io/share-card.png">
   <meta property="og:image:width" content="1200">
@@ -54,10 +54,16 @@
     <aside>
       <nav aria-label="目次">
         <p>目次</p>
-        <a href="#profile">職務要約</a>
+        <a href="#strengths">強み</a>
         <a href="#experience">職務経歴</a>
+        <div class="toc-sub">
+          <a href="#no-4">No.4 メッセージアプリ</a>
+          <a href="#no-3">No.3 SNS アプリ</a>
+          <a href="#no-2">No.2 動画制作・投稿</a>
+          <a href="#no-1">No.1 コンテンツ機能</a>
+        </div>
         <a href="#projects">個人開発</a>
-        <a href="#skills">技術・ツール</a>
+        <a href="#skills">技術スタック</a>
         <a href="#education">学歴・語学</a>
       </nav>
     </aside>
@@ -65,67 +71,250 @@
       <header class="intro">
         <h1>Jack Ma</h1>
         <p class="role">シニア iOS エンジニア · モバイル開発リード</p>
-        <p class="location">日本</p>
+        <p class="meta">モバイルアプリ開発 8年以上 · Swift 5年 · 日本在住</p>
+        <p class="jump"><a href="#experience">職務経歴を見る ↓</a></p>
       </header>
-      <section id="profile">
-        <h2>職務要約</h2>
-        <p>モバイルアプリ開発歴8年以上、Swift の実務経験5年。iOS の設計、音声・動画、パフォーマンス改善が専門です。メッセージアプリの iOS 版を立ち上げ、会話一覧の更新時間を70%短縮（アプリ実測）。ByteDance では4K 動画圧縮時のピークメモリ使用量を60%削減しました。</p>
+
+      <section id="strengths">
+        <h2><span id="profile"></span>強み</h2>
+        <div class="strengths">
+          <div class="strength">
+            <h3>iOS アプリの 0 → 1 立ち上げと設計</h3>
+            <ul>
+              <li>技術選定、プロジェクト構築、主要機能の開発を主導し、プロジェクト作成から約8か月で初回リリース</li>
+              <li>Swift のプロトコルと依存性注入で共通 SDK を切り出し、複数のアプリで再利用</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>音声・動画とパフォーマンス改善</h3>
+            <ul>
+              <li>暗号化動画の最初のフレーム表示を8.7秒から0.7秒に短縮（ローカル比較）</li>
+              <li>会話一覧の更新時間を70%短縮（アプリ実測）</li>
+              <li>4K 動画圧縮時のピークメモリを60%削減し、修正は編集 SDK に採用</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>開発効率の改善</h3>
+            <ul>
+              <li>Xcode Cloud のタスク開始からアーカイブ成功までの時間を40%短縮（CocoaPods → Swift Package Manager）</li>
+              <li>IPA サイズを10 MB 以上削減し、しきい値を超える増加をマージ時に自動でブロック</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>チームリード（モバイル4名 / iOS チーム5〜6名）</h3>
+            <ul>
+              <li>要件整理、スケジュール調整、iOS・Android のリリースを担当</li>
+              <li>2か月ごとの技術計画を策定。新人4名のメンターを務め、新卒2名を本採用まで支援</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>AI を活用した開発</h3>
+            <ul>
+              <li>SDK 変更のレビュー用 Skill を作成し、過去の変更でレビュー結果を評価</li>
+              <li>Daynest を個人開発。LLM のツール呼び出しで、ユーザー確認後に記帳する仕組みを実装</li>
+            </ul>
+          </div>
+        </div>
       </section>
+
       <section id="experience">
         <h2>職務経歴</h2>
-        <article class="resume-entry">
-          <h3>日本のソフトウェア企業</h3>
-          <p>2023年〜現在 · モバイル開発リード / iOS エンジニア</p>
-          <p>4名のチームで iOS・Android の開発とリリースを担当。入社当初は React Native アプリの開発に参加。</p>
-          <ul>
-            <li><strong>iOS 版の立ち上げと共通 SDK：</strong> ネイティブ iOS 版の技術選定と設計を主導し、プロジェクトの作成から約8か月で App Store に初回リリース。Swift のプロトコルと依存性注入で機能間の依存関係とアプリ固有の設定を分離し、共通 SDK を複数のアプリで再利用。</li>
-            <li><strong>会話一覧の高速化：</strong> 会話一覧の更新時間を70%短縮（アプリ実測）。WCDB での一括取得、初期表示分の先読み、メッセージプレビューのキャッシュで実現。</li>
-            <li><strong>暗号化動画の再生：</strong> 最初のフレームの表示まで8.7秒から0.7秒に短縮（ローカル比較）。メディア SDK を改修し、ダウンロードと並行して復号・再生する方式に変更。</li>
-            <li><strong>ビルド時間の短縮：</strong> Xcode Cloud のタスク開始からアーカイブ成功までの時間を40%短縮。CocoaPods から Swift Package Manager への依存関係の移行を推進。</li>
-            <li><strong>複数端末への着信対応：</strong> 1台で応答すると、ほかの端末の着信が止まる仕組みを実現。初期版の通話シグナリングを設計し、iOS 側の実装と Android・バックエンド担当との調整を担当。</li>
-          </ul>
-        </article>
-        <article class="resume-entry">
-          <h3>ByteDance｜西瓜視頻（Xigua Video）</h3>
-          <p>2017年7月〜2022年9月 · iOS エンジニア → シニア iOS エンジニア</p>
-          <ul>
-            <li><strong>動画投稿フロー：</strong> 通常の通信環境で、投稿画面を開いてからアップロードが完了するまでの時間を50%短縮。圧縮とアップロードを並行化し、投稿タスクの永続化により、画面を離れた後の処理継続と再起動後のアップロード再開に対応。</li>
-            <li><strong>4K 動画圧縮：</strong> 4K 動画圧縮時のピークメモリ使用量を60%削減。Instruments と編集 SDK のソースコードで原因を特定し、端末のメモリ容量に応じた修正を検証し、編集 SDK に反映。</li>
-            <li><strong>動画制作機能のコンポーネント化：</strong> 編集と投稿を分離し、サンプルアプリでの単独開発・デバッグに対応。後続の編集機能で使える Undo / Redo の共通モデルを設計。</li>
-            <li><strong>チームリードと育成：</strong> 5〜6名の iOS チームをリードし、技術計画、分担、スケジュールを担当。新人4名のメンターを務め、新卒採用の2名を本採用まで支援。</li>
-          </ul>
-        </article>
-        <article class="resume-entry">
-          <h3>Philips｜機器連携アプリ</h3>
-          <p>2016年1月〜9月 · iOS 開発インターン</p>
-          <p>空気質モニターと離乳食メーカーの連携アプリで、測定データの表示などの機能開発と iPhone・iPad への対応を担当。</p>
-        </article>
+
+        <div class="company">
+          <h3>日本のソフトウェア企業<span>2023年8月〜現在</span></h3>
+          <div class="jobs">
+            <details class="job" id="no-4" open>
+              <summary>
+                <span class="job-no">No.4</span>
+                <span class="job-title">メッセージアプリ｜iOS 版の立ち上げとモバイル開発リード</span>
+                <span class="job-meta"><span class="role-tag">モバイル開発リード / iOS</span><span>Swift · AVFoundation · WCDB</span><span>約8か月で初回リリース、会話一覧の更新時間を70%短縮</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期間</h4>
+                <p>2024年〜現在</p>
+                <h4>チーム体制</h4>
+                <p>モバイル4名（iOS 2名、Android 2名）。両プラットフォームのリリースを担当し、iOS の開発も兼任。</p>
+                <h4>担当業務</h4>
+                <ul>
+                  <li>ネイティブ iOS 版の技術選定、プロジェクト構築、主要機能の開発</li>
+                  <li>要件整理、担当の割り振り、日程調整。テスト、不具合修正、リリースの推進</li>
+                  <li>実装例とコードレビューによるモジュール境界の統一</li>
+                </ul>
+                <h4>技術的な取り組み</h4>
+                <ul>
+                  <li><strong>設計：</strong>Swift のプロトコルと依存性注入で機能間の依存とアプリ固有の設定を分離し、複数アプリで使う共通 SDK を切り出し</li>
+                  <li><strong>会話一覧：</strong>更新時間を70%短縮（アプリ実測）
+                    <ul>
+                      <li>会話ごとのクエリを WCDB の一括取得に置き換え、初期表示の先読みと概要のキャッシュを追加</li>
+                      <li>会話1,000件の模擬データでの比較で、SQL クエリを3,000回から36回に削減</li>
+                    </ul>
+                  </li>
+                  <li><strong>暗号化動画：</strong>最初のフレーム表示を8.7秒から0.7秒に短縮（ローカル比較、16 Mbps 制限）
+                    <ul>
+                      <li><code>AVAssetResourceLoaderDelegate</code> でプレーヤーが要求するバイト範囲を暗号化ブロックに対応付け、ダウンロードと並行して復号</li>
+                      <li>最初のフレームまでのダウンロード量を16.1 MB から1.1 MB に削減</li>
+                    </ul>
+                  </li>
+                  <li><strong>音声・ビデオ通話：</strong>Daily SDK で初期版の通話機能を一人で実装。システムの音声出力選択で受話口・スピーカー・AirPods の切り替え不具合を解消し、その後 CallKit を保守</li>
+                  <li><strong>複数端末への着信：</strong>初期版のシグナリングを設計し、1台で応答するとほかの端末の着信が止まるよう Android・バックエンド担当と対応</li>
+                  <li><strong>並行処理：</strong><code>TaskGroup</code> で添付ファイルの同時アップロード数を制限し、<code>actor</code> で投稿状態を隔離</li>
+                  <li><strong>開発基盤：</strong>CocoaPods から Swift Package Manager への移行を推進し、Xcode Cloud のタスク開始からアーカイブ成功までを40%短縮。メインアプリと7つのコンポーネントリポジトリに PR の自動チェックを整備</li>
+                </ul>
+                <h4>開発環境</h4>
+                <ul class="chips">
+                  <li>Swift</li><li>UIKit</li><li>Combine</li><li>Swift Concurrency</li><li>AVFoundation</li><li>CallKit</li><li>Daily SDK</li><li>WCDB</li><li>WebSocket</li><li>Swift Package Manager</li><li>Xcode Cloud</li><li>GitHub Actions</li><li>Codex</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="job" id="no-3">
+              <summary>
+                <span class="job-no">No.3</span>
+                <span class="job-title">SNS アプリ｜React Native 開発</span>
+                <span class="job-meta"><span class="role-tag">モバイルエンジニア</span><span>React Native</span><span>入社当初に機能開発を担当</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期間</h4>
+                <p>2023年8月〜（入社当初）</p>
+                <h4>チーム体制</h4>
+                <p>iOS・Android・Web のエンジニアが共同で開発。</p>
+                <h4>担当業務</h4>
+                <ul>
+                  <li>React Native 製 SNS アプリの機能開発に参加</li>
+                  <li>プロダクトの方針転換後、メッセージアプリのネイティブ開発（No.4）へ移行</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="company">
+          <h3>ByteDance｜西瓜視頻（Xigua Video）<span>2017年7月〜2022年9月（2017年2月からインターン）</span></h3>
+          <div class="jobs">
+            <details class="job" id="no-2" open>
+              <summary>
+                <span class="job-no">No.2</span>
+                <span class="job-title">動画制作・投稿｜投稿システム、編集、コンポーネント化</span>
+                <span class="job-meta"><span class="role-tag">シニア iOS エンジニア → チームリーダー</span><span>Objective-C · Swift · AVFoundation</span><span>投稿時間を50%短縮、4K 圧縮時のピークメモリを60%削減</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期間</h4>
+                <p>2019年3月〜2022年9月</p>
+                <h4>チーム体制</h4>
+                <p>動画制作領域の iOS チーム5〜6名（本人含む）。後期はチームリーダーを担当。</p>
+                <h4>担当業務</h4>
+                <ul>
+                  <li>動画投稿システムと制作機能のコンポーネント化を担当し、編集機能の開発にも参加</li>
+                  <li>2か月ごとの技術計画を起案し、チーム内の分担とスケジュールを管理</li>
+                  <li>新人4名のメンターを務め、新卒2名を本採用まで支援</li>
+                </ul>
+                <h4>技術的な取り組み</h4>
+                <ul>
+                  <li><strong>投稿の高速化：</strong>圧縮とアップロードを並行化し、通常の通信環境で投稿画面を開いてからアップロード完了までの時間を50%短縮</li>
+                  <li><strong>タスクの永続化：</strong>画面を離れた後も処理を継続し、アプリ再起動後にアップロードを再開</li>
+                  <li><strong>4K 圧縮のメモリ：</strong>ピークメモリを60%削減
+                    <ul>
+                      <li>Instruments と編集 SDK のソースコードでメモリ不足の原因を特定し、端末のメモリ容量に応じて処理を切り替え</li>
+                      <li>A/B 比較で効果を確認し、修正は SDK チームに採用</li>
+                    </ul>
+                  </li>
+                  <li><strong>コンポーネント化：</strong>編集と投稿をホストとのブリッジとサンプルアプリで単独開発・デバッグ可能にし、ビルド済みコンポーネントで重複コンパイルを削減</li>
+                  <li><strong>編集モデル：</strong>Action / Revert による Undo / Redo の共通モデルを設計し、チームで実装。後続の編集機能でも利用</li>
+                </ul>
+                <h4>開発環境</h4>
+                <ul class="chips">
+                  <li>Objective-C</li><li>Swift</li><li>UIKit</li><li>AVFoundation</li><li>Instruments</li><li>CocoaPods</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="job" id="no-1">
+              <summary>
+                <span class="job-no">No.1</span>
+                <span class="job-title">コンテンツ機能｜弾幕コメント、フォロー、アプリサイズ</span>
+                <span class="job-meta"><span class="role-tag">iOS エンジニア</span><span>Objective-C</span><span>弾幕コメントを一人で実装、IPA サイズを10 MB 以上削減</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期間</h4>
+                <p>2017年7月〜2019年2月</p>
+                <h4>技術的な取り組み</h4>
+                <ul>
+                  <li><strong>弾幕コメント：</strong>プレーヤーの弾幕コメント機能を一人で設計・実装。速度差から追いつく時間を計算し、同じレーンでの重なりを防止</li>
+                  <li><strong>フォロー機能：</strong>再利用できる記事・動画リストとフォロー機能を開発し、複数画面のフォロー状態を同期</li>
+                  <li><strong>アプリサイズ：</strong>主担当として IPA サイズを10 MB 以上削減
+                    <ul>
+                      <li>画像の重複排除と圧縮で6 MB、不要コードの削除とコンポーネントの最適化で4 MB を削減</li>
+                      <li>既存の Ruby ツールをプロダクト向けに調整し、<code>otool</code> で Mach-O を解析して未使用の可能性があるクラスとメソッドを検出</li>
+                      <li>サイズ増加のチェックをマージフローに組み込み、しきい値を超える変更をブロック</li>
+                    </ul>
+                  </li>
+                </ul>
+                <h4>開発環境</h4>
+                <ul class="chips">
+                  <li>Objective-C</li><li>UIKit</li><li>Ruby</li><li>otool</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <p class="early">初期の経歴：Philips（2016年1月〜9月、iOS 開発インターン）。空気質モニターと離乳食メーカーの連携アプリで、機能開発と iPhone・iPad への対応を担当。</p>
       </section>
+
       <section id="projects">
         <h2>個人開発</h2>
-        <article class="resume-entry">
-          <h3>Daynest｜SwiftUI 家計簿アプリ</h3>
-          <p>2026年から開発 · 未リリース</p>
-          <ul>
-            <li>要件定義、設計、受け入れ条件の策定から SwiftUI での実装まで一人で担当。GRDB でオフライン記帳、CloudKit で端末間同期に対応。</li>
-            <li>OpenAI Responses API のツール呼び出しで、自然言語での帳簿検索と画像・PDF の明細読み取りに対応。ユーザーが確認した下書きは手入力と同じ検証・トランザクションで保存し、実行結果の記録で再試行時の二重登録を防止。</li>
-          </ul>
-        </article>
+        <details class="job" open>
+          <summary>
+            <span class="job-no">個人</span>
+            <span class="job-title">Daynest｜SwiftUI 家計簿アプリ</span>
+            <span class="job-meta"><span class="role-tag">個人開発</span><span>SwiftUI · GRDB · CloudKit</span><span>2026年10月から開発 · 未リリース</span></span>
+          </summary>
+          <div class="job-body">
+            <h4>担当業務</h4>
+            <p>要件定義、設計、実装、受け入れ確認まで一人で担当。</p>
+            <h4>技術的な取り組み</h4>
+            <ul>
+              <li><strong>ネイティブ：</strong>SwiftUI で iPhone・iPad の画面を開発。GRDB でオフライン記帳、CloudKit で端末間同期に対応</li>
+              <li><strong>AI 記帳：</strong>OpenAI Responses API のツール呼び出しで、自然言語での帳簿検索と画像・PDF の明細読み取りに対応</li>
+              <li><strong>書き込みの安全性：</strong>ユーザーが確認した下書きを手入力と同じ検証・トランザクションで保存し、実行結果の記録で再試行時の二重登録を防止</li>
+              <li><strong>AI を使った開発フロー：</strong>Codex で実装を進め、<code>AGENTS.md</code> とプロジェクトの Skills でセルフレビューと UI の回帰確認を定型化。GitHub Actions で Claude Code による PR レビューを実行</li>
+            </ul>
+            <h4>開発環境</h4>
+            <ul class="chips">
+              <li>Swift</li><li>SwiftUI</li><li>GRDB</li><li>CloudKit</li><li>OpenAI Responses API</li><li>Codex</li><li>Claude Code</li><li>GitHub Actions</li>
+            </ul>
+          </div>
+        </details>
       </section>
+
       <section id="skills">
-        <h2>技術・ツール</h2>
-        <ul>
-          <li><strong>iOS 開発：</strong> Swift, Objective-C, UIKit, SwiftUI, Combine</li>
-          <li><strong>設計・並行処理：</strong> モジュール設計、共通 SDK、依存性注入、Swift Concurrency、GCD</li>
-          <li><strong>通信・ストレージ：</strong> URLSession, WebSocket, WCDB, GRDB, CloudKit</li>
-          <li><strong>音声・動画と性能改善：</strong> AVFoundation、CallKit、動画圧縮、音声ルーティング、Instruments</li>
-          <li><strong>開発基盤と AI 活用：</strong> Swift Package Manager、XCTest、GitHub Actions、Codex、Claude Code、Agent Skills、LLM のツール呼び出し</li>
-        </ul>
+        <h2>技術スタック</h2>
+        <dl class="skill-grid">
+          <dt>言語・UI</dt>
+          <dd><ul class="chips"><li>Swift</li><li>Objective-C</li><li>UIKit</li><li>SwiftUI</li><li>Auto Layout</li></ul></dd>
+          <dt>設計</dt>
+          <dd><ul class="chips"><li>MVVM</li><li>モジュール設計</li><li>プロトコルによる疎結合</li><li>依存性注入</li><li>共通 SDK 設計</li><li>API 互換性</li></ul></dd>
+          <dt>並行処理</dt>
+          <dd><ul class="chips"><li>async/await</li><li>TaskGroup</li><li>actor</li><li>MainActor</li><li>Combine</li><li>GCD</li><li>OperationQueue</li></ul></dd>
+          <dt>音声・動画</dt>
+          <dd><ul class="chips"><li>AVFoundation</li><li>AVPlayer</li><li>AVAssetResourceLoaderDelegate</li><li>AVAudioSession</li><li>CallKit</li><li>動画圧縮</li><li>暗号化ストリーミング再生</li><li>音声ルーティング</li></ul></dd>
+          <dt>データ・通信</dt>
+          <dd><ul class="chips"><li>WCDB</li><li>GRDB</li><li>Core Data</li><li>CloudKit</li><li>URLSession</li><li>WebSocket</li></ul></dd>
+          <dt>システム連携</dt>
+          <dd><ul class="chips"><li>APNs</li><li>Notification Service Extension</li><li>Share Extension</li><li>App Groups</li><li>Keychain</li><li>WKWebView</li><li>JavaScript Bridge</li></ul></dd>
+          <dt>セキュリティ（プロトコル組み込み）</dt>
+          <dd><ul class="chips"><li>公開鍵・秘密鍵による ID</li><li>署名と検証</li><li>ECDH 鍵共有</li><li>メッセージ暗号化</li></ul></dd>
+          <dt>開発基盤・品質</dt>
+          <dd><ul class="chips"><li>Swift Package Manager</li><li>CocoaPods</li><li>Xcode Cloud</li><li>GitHub Actions</li><li>XCTest</li><li>SwiftLint</li><li>Instruments</li><li>アプリサイズ削減</li></ul></dd>
+          <dt>AI 活用</dt>
+          <dd><ul class="chips"><li>Codex</li><li>Claude Code</li><li>Agent Skills</li><li>LLM のツール呼び出し</li><li>AI コードレビュー</li></ul></dd>
+        </dl>
       </section>
+
       <section id="education">
         <h2>学歴・語学</h2>
-        <p>電子科技大学（中国）でソフトウェア工学の学士号を取得。</p>
-        <p>中国語は業務上のコミュニケーションと技術文書の作成。日本語は JLPT N2。英語は技術文書とソースコードの読解。</p>
+        <p>電子科技大学（中国）· ソフトウェア工学 学士（2013年〜2017年）</p>
+        <p>中国語：業務上のコミュニケーションと技術文書 · 日本語：JLPT N2 · 英語：技術文書とソースコードの読解</p>
       </section>
       <footer><a href="#top">ページ上部へ ↑</a></footer>
     </main>

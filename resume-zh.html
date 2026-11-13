@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jack Ma｜职业履历</title>
-  <meta name="description" content="Jack Ma 的职业履历，涵盖 iOS 从零搭建、双端交付、视频性能优化和 AI 研发实践。">
+  <meta name="description" content="Jack Ma 的职业履历：iOS 从零搭建与架构、音视频与性能优化、双端团队交付及 AI 研发实践。">
   <link rel="canonical" href="https://jack--ma.github.io/resume-zh.html">
   <link rel="alternate" hreflang="ja" href="https://jack--ma.github.io/resume-ja.html">
   <link rel="alternate" hreflang="zh-CN" href="https://jack--ma.github.io/resume-zh.html">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:title" content="Jack Ma｜职业履历">
-  <meta property="og:description" content="Jack Ma 的职业履历，涵盖 iOS 从零搭建、双端交付、视频性能优化和 AI 研发实践。">
+  <meta property="og:description" content="Jack Ma 的职业履历：iOS 从零搭建与架构、音视频与性能优化、双端团队交付及 AI 研发实践。">
   <meta property="og:url" content="https://jack--ma.github.io/resume-zh.html">
   <meta property="og:image" content="https://jack--ma.github.io/share-card.png">
   <meta property="og:image:width" content="1200">
@@ -54,10 +54,16 @@
     <aside>
       <nav aria-label="履历目录">
         <p>目录</p>
-        <a href="#profile">职业概述</a>
-        <a href="#experience">工作经历</a>
+        <a href="#strengths">核心优势</a>
+        <a href="#experience">职务经历</a>
+        <div class="toc-sub">
+          <a href="#no-4">No.4 即时通信 App</a>
+          <a href="#no-3">No.3 社交 App</a>
+          <a href="#no-2">No.2 视频创作与发布</a>
+          <a href="#no-1">No.1 内容业务</a>
+        </div>
         <a href="#projects">个人项目</a>
-        <a href="#skills">专业技能</a>
+        <a href="#skills">技术栈</a>
         <a href="#education">教育与语言</a>
       </nav>
     </aside>
@@ -65,67 +71,250 @@
       <header class="intro">
         <h1>Jack Ma</h1>
         <p class="role">资深 iOS 工程师 · 客户端团队负责人</p>
-        <p class="location">日本</p>
+        <p class="meta">移动端开发 8 年以上 · Swift 5 年 · 日本</p>
+        <p class="jump"><a href="#experience">看项目经历 ↓</a></p>
       </header>
-      <section id="profile">
-        <h2>职业概述</h2>
-        <p>8 年以上移动端开发经验，5 年 Swift 经验，专注 iOS 架构、音视频与性能优化。主导即时通信 App 的 iOS 端从零上线，会话列表刷新耗时实测降低 70%。曾在字节跳动将 4K 视频压缩峰值内存降低 60%。</p>
+
+      <section id="strengths">
+        <h2><span id="profile"></span>核心优势</h2>
+        <div class="strengths">
+          <div class="strength">
+            <h3>iOS 从零搭建与架构</h3>
+            <ul>
+              <li>主导原生选型、工程搭建与核心研发，工程初始化后约 8 个月上架首版</li>
+              <li>以 Swift 协议和依赖注入拆出公共 SDK，由多个 App 复用</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>音视频与性能优化</h3>
+            <ul>
+              <li>加密视频首帧从 8.7 秒降到 0.7 秒（本地对照）</li>
+              <li>会话列表刷新耗时降低 70%（App 实测）</li>
+              <li>4K 视频压缩峰值内存降低 60%，修复被剪辑 SDK 团队采纳</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>工程效率</h3>
+            <ul>
+              <li>Xcode Cloud 从任务启动到归档成功的耗时降低 40%（CocoaPods → Swift Package Manager）</li>
+              <li>IPA 包体积减少 10 MB 以上，合并流程自动拦截超阈值增量</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>团队带领（双端 4 人 / iOS 小组 5–6 人）</h3>
+            <ul>
+              <li>负责需求拆解、排期与 iOS、Android 版本发布</li>
+              <li>制定小组双月技术计划，带教 4 位新人，协助 2 位校招生转正</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>AI 研发</h3>
+            <ul>
+              <li>定制 SDK 变更审查 Skill，用历史改动评估审查结果</li>
+              <li>独立开发 Daynest，以 LLM 工具调用实现用户确认后入账</li>
+            </ul>
+          </div>
+        </div>
       </section>
+
       <section id="experience">
-        <h2>工作经历</h2>
-        <article class="resume-entry">
-          <h3>日本软件公司</h3>
-          <p>2023 年至今 · 客户端团队负责人 / iOS 开发</p>
-          <p>带领 4 人团队交付 iOS 和 Android 版本。此前参与 React Native 产品开发。</p>
-          <ul>
-            <li><strong>iOS 首版与公共 SDK：</strong>主导原生选型和 iOS 工程搭建，从工程初始化到 App Store 首版上架约 8 个月。通过 Swift 协议与依赖注入隔离业务依赖和 App 配置，抽取公共 SDK 供多个 App 复用。</li>
-            <li><strong>会话列表性能：</strong>列表刷新耗时降低 70%（App 实测）。通过 WCDB 批量读取、首屏预载与消息预览缓存减少查询。</li>
-            <li><strong>加密视频播放：</strong>首帧耗时从 8.7 秒降至 0.7 秒（本地对照）。重构媒体 SDK，支持边下载边分块解密播放。</li>
-            <li><strong>构建效率：</strong>Xcode Cloud 从任务启动到归档成功的耗时降低 40%。推进依赖从 CocoaPods 迁移至 Swift Package Manager。</li>
-            <li><strong>多设备来电：</strong>实现一台设备接听后，其余设备自动停止响铃。设计首版通话信令并实现 iOS 端，推动 Android 和服务端补齐处理。</li>
-          </ul>
-        </article>
-        <article class="resume-entry">
-          <h3>字节跳动｜西瓜视频</h3>
-          <p>2017.07—2022.09 · iOS 开发工程师 → 高级开发工程师</p>
-          <ul>
-            <li><strong>视频发布：</strong>正常网络下，从进入发布页到上传完成的耗时减少 50%。将压缩与上传并行，并通过任务持久化支持离开页面后继续处理及重启续传。</li>
-            <li><strong>4K 压缩：</strong>将 4K 视频压缩峰值内存降低 60%。用 Instruments 和 SDK 源码定位内存问题，按机型内存容量调整压缩策略，对照验证后推动 SDK 团队采纳。</li>
-            <li><strong>创作组件化：</strong>拆分剪辑和发布组件，通过示例工程支持独立开发调试。设计撤销与重做模型，供后续剪辑功能沿用。</li>
-            <li><strong>技术带队：</strong>后期带领 5–6 人 iOS 小组，制定技术计划并负责分工与排期。累计担任 4 位新人的导师，协助 2 位校招生转正。</li>
-          </ul>
-        </article>
-        <article class="resume-entry">
-          <h3>飞利浦｜智能设备配套应用</h3>
-          <p>2016.01—2016.09 · iOS 开发实习生</p>
-          <p>参与空气质量检测设备与婴儿辅食机配套 App 的开发，负责数据展示等业务功能及 iPhone、iPad 适配。</p>
-        </article>
+        <h2>职务经历</h2>
+
+        <div class="company">
+          <h3>日本软件公司<span>2023.08—至今</span></h3>
+          <div class="jobs">
+            <details class="job" id="no-4" open>
+              <summary>
+                <span class="job-no">No.4</span>
+                <span class="job-title">即时通信 App｜iOS 从零上线与双端交付</span>
+                <span class="job-meta"><span class="role-tag">客户端负责人 / iOS</span><span>Swift · AVFoundation · WCDB</span><span>约 8 个月上架首版，会话列表刷新耗时降低 70%</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期间</h4>
+                <p>2024 年至今</p>
+                <h4>团队</h4>
+                <p>客户端 4 人（iOS 2 人、Android 2 人）。本人负责双端交付，同时承担 iOS 开发。</p>
+                <h4>职责</h4>
+                <ul>
+                  <li>原生技术选型、iOS 工程搭建与核心研发</li>
+                  <li>需求拆解、分工与排期，推进双端提测、修复与发布</li>
+                  <li>以示例代码和代码评审统一模块边界</li>
+                </ul>
+                <h4>技术亮点</h4>
+                <ul>
+                  <li><strong>架构：</strong>用 Swift 协议和依赖注入隔离模块与宿主配置，抽取跨 App 复用的公共 SDK</li>
+                  <li><strong>会话列表：</strong>刷新耗时降低 70%（App 实测）
+                    <ul>
+                      <li>WCDB 批量读取取代逐会话查询，配合首屏预载与摘要缓存</li>
+                      <li>1,000 个会话的模拟对照中，SQL 查询从 3,000 次降到 36 次</li>
+                    </ul>
+                  </li>
+                  <li><strong>加密视频：</strong>首帧从 8.7 秒降到 0.7 秒（本地对照，限速 16 Mbps）
+                    <ul>
+                      <li>用 <code>AVAssetResourceLoaderDelegate</code> 把播放器请求的字节范围映射到加密分块，边下载边解密</li>
+                      <li>首帧前下载量从 16.1 MB 降到 1.1 MB</li>
+                    </ul>
+                  </li>
+                  <li><strong>音视频通话：</strong>基于 Daily SDK 独立交付首版通话，用系统音频输出选择修复听筒、扬声器与 AirPods 切换异常，后续维护 CallKit</li>
+                  <li><strong>多设备来电：</strong>设计首版信令，推动 Android 与后端实现一台设备接听后其余设备停止响铃</li>
+                  <li><strong>并发：</strong>用 <code>TaskGroup</code> 限制附件上传并发，用 <code>actor</code> 隔离发布状态</li>
+                  <li><strong>工程：</strong>推进 CocoaPods → Swift Package Manager 迁移，Xcode Cloud 从任务启动到归档成功的耗时降低 40%；为主 App 和 7 个组件仓库搭建 PR 自动检查</li>
+                </ul>
+                <h4>开发环境</h4>
+                <ul class="chips">
+                  <li>Swift</li><li>UIKit</li><li>Combine</li><li>Swift Concurrency</li><li>AVFoundation</li><li>CallKit</li><li>Daily SDK</li><li>WCDB</li><li>WebSocket</li><li>Swift Package Manager</li><li>Xcode Cloud</li><li>GitHub Actions</li><li>Codex</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="job" id="no-3">
+              <summary>
+                <span class="job-no">No.3</span>
+                <span class="job-title">社交 App｜React Native 开发</span>
+                <span class="job-meta"><span class="role-tag">移动端开发</span><span>React Native</span><span>入职初期参与产品功能开发</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期间</h4>
+                <p>2023.08 起（入职初期）</p>
+                <h4>团队</h4>
+                <p>iOS、Android 与 Web 开发共同参与。</p>
+                <h4>职责</h4>
+                <ul>
+                  <li>参与 React Native 社交 App 的功能开发</li>
+                  <li>产品方向调整后转入即时通信 App 的原生开发（No.4）</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="company">
+          <h3>字节跳动｜西瓜视频<span>2017.07—2022.09（2017.02 起实习）</span></h3>
+          <div class="jobs">
+            <details class="job" id="no-2" open>
+              <summary>
+                <span class="job-no">No.2</span>
+                <span class="job-title">视频创作与发布｜发布系统、剪辑与组件化</span>
+                <span class="job-meta"><span class="role-tag">高级 iOS 工程师 → 小组负责人</span><span>Objective-C · Swift · AVFoundation</span><span>发布耗时减少 50%，4K 压缩峰值内存降低 60%</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期间</h4>
+                <p>2019.03—2022.09</p>
+                <h4>团队</h4>
+                <p>创作侧 iOS 小组 5–6 人（含本人），后期担任小组负责人。</p>
+                <h4>职责</h4>
+                <ul>
+                  <li>负责视频发布系统与创作组件化，参与剪辑功能开发</li>
+                  <li>起草小组双月技术计划，负责组内需求分工与排期</li>
+                  <li>担任 4 位新人的导师，协助 2 位校招生转正</li>
+                </ul>
+                <h4>技术亮点</h4>
+                <ul>
+                  <li><strong>发布提速：</strong>压缩与上传并行，正常网络下从进入发布页到上传完成的耗时减少 50%</li>
+                  <li><strong>任务持久化：</strong>离开发布页后继续处理，App 重启后续传</li>
+                  <li><strong>4K 内存：</strong>峰值内存降低 60%
+                    <ul>
+                      <li>用 Instruments 和剪辑 SDK 源码定位 OOM，按机型内存容量分档处理</li>
+                      <li>A/B 对照验证后，修复被 SDK 团队采纳</li>
+                    </ul>
+                  </li>
+                  <li><strong>组件化：</strong>剪辑与发布组件通过宿主桥接和示例工程独立开发调试，以预编译组件减少重复编译</li>
+                  <li><strong>剪辑模型：</strong>设计 Action / Revert 撤销重做模型，与团队共同实现，后续功能沿用</li>
+                </ul>
+                <h4>开发环境</h4>
+                <ul class="chips">
+                  <li>Objective-C</li><li>Swift</li><li>UIKit</li><li>AVFoundation</li><li>Instruments</li><li>CocoaPods</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="job" id="no-1">
+              <summary>
+                <span class="job-no">No.1</span>
+                <span class="job-title">内容业务｜弹幕、关注与包体积</span>
+                <span class="job-meta"><span class="role-tag">iOS 工程师</span><span>Objective-C</span><span>独立实现弹幕系统，IPA 包体积减少 10 MB 以上</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>期间</h4>
+                <p>2017.07—2019.02</p>
+                <h4>技术亮点</h4>
+                <ul>
+                  <li><strong>弹幕：</strong>独立设计并实现播放器弹幕系统，按速度差计算追及时间，避免同轨重叠</li>
+                  <li><strong>关注模块：</strong>开发可复用的图文视频列表与关注模块，同步多页面关注状态</li>
+                  <li><strong>包体积：</strong>主要由本人负责，IPA 减少 10 MB 以上
+                    <ul>
+                      <li>图片去重与压缩减少 6 MB，无用代码清理与组件优化减少 4 MB</li>
+                      <li>适配现有 Ruby 工具，用 <code>otool</code> 分析 Mach-O，按业务规则过滤后输出疑似无用的类与方法</li>
+                      <li>增量检查接入合并流程，超阈值时阻止合入</li>
+                    </ul>
+                  </li>
+                </ul>
+                <h4>开发环境</h4>
+                <ul class="chips">
+                  <li>Objective-C</li><li>UIKit</li><li>Ruby</li><li>otool</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <p class="early">早期经历：飞利浦（2016.01—2016.09，iOS 开发实习生），参与空气质量检测仪与婴儿辅食机配套 App 的功能开发及 iPhone、iPad 适配。</p>
       </section>
+
       <section id="projects">
         <h2>个人项目</h2>
-        <article class="resume-entry">
-          <h3>Daynest｜SwiftUI 记账 App</h3>
-          <p>2026 年起 · 未发布</p>
-          <ul>
-            <li>独立负责产品需求、架构与验收，使用 SwiftUI 开发 iPhone 和 iPad 应用。使用 GRDB 支持离线记账，通过 CloudKit 同步。</li>
-            <li>接入 OpenAI Responses API 工具调用，支持自然语言查账和图片、PDF 账单识别。识别结果经用户确认后，走与手动入账相同的校验和事务，并通过操作回执防止重试时重复入账。</li>
-          </ul>
-        </article>
+        <details class="job" open>
+          <summary>
+            <span class="job-no">个人</span>
+            <span class="job-title">Daynest｜SwiftUI 记账 App</span>
+            <span class="job-meta"><span class="role-tag">独立开发</span><span>SwiftUI · GRDB · CloudKit</span><span>2026.10 起 · 未发布</span></span>
+          </summary>
+          <div class="job-body">
+            <h4>职责</h4>
+            <p>独立负责产品需求、架构、实现与验收。</p>
+            <h4>技术亮点</h4>
+            <ul>
+              <li><strong>原生：</strong>SwiftUI 开发 iPhone 与 iPad 界面，GRDB 支持离线记账，CloudKit 跨设备同步</li>
+              <li><strong>AI 记账：</strong>接入 OpenAI Responses API 工具调用，支持自然语言查账与图片、PDF 账单识别</li>
+              <li><strong>写入安全：</strong>识别结果经用户确认后，与手动入账共用校验和事务，操作回执防止重试重复入账</li>
+              <li><strong>AI 研发流程：</strong>用 Codex 推进实现，<code>AGENTS.md</code> 与项目级 Skills 固化自审和 UI 回归，GitHub Actions 接入 Claude Code 审查 PR</li>
+            </ul>
+            <h4>开发环境</h4>
+            <ul class="chips">
+              <li>Swift</li><li>SwiftUI</li><li>GRDB</li><li>CloudKit</li><li>OpenAI Responses API</li><li>Codex</li><li>Claude Code</li><li>GitHub Actions</li>
+            </ul>
+          </div>
+        </details>
       </section>
+
       <section id="skills">
-        <h2>专业技能</h2>
-        <ul>
-          <li><strong>iOS 开发：</strong>Swift、Objective-C、UIKit、SwiftUI、Combine。</li>
-          <li><strong>架构与并发：</strong>模块化、公共 SDK、依赖注入、Swift Concurrency、GCD。</li>
-          <li><strong>网络与存储：</strong>URLSession、WebSocket、WCDB、GRDB、CloudKit。</li>
-          <li><strong>音视频与性能：</strong>AVFoundation、CallKit、视频压缩、音频路由、Instruments。</li>
-          <li><strong>工程与 AI 研发：</strong>Swift Package Manager、XCTest、GitHub Actions、Codex、Claude Code、Agent Skills、LLM 工具调用。</li>
-        </ul>
+        <h2>技术栈</h2>
+        <dl class="skill-grid">
+          <dt>语言与 UI</dt>
+          <dd><ul class="chips"><li>Swift</li><li>Objective-C</li><li>UIKit</li><li>SwiftUI</li><li>Auto Layout</li></ul></dd>
+          <dt>架构</dt>
+          <dd><ul class="chips"><li>MVVM</li><li>模块化</li><li>协议解耦</li><li>依赖注入</li><li>公共 SDK 设计</li><li>接口兼容</li></ul></dd>
+          <dt>并发与响应式</dt>
+          <dd><ul class="chips"><li>async/await</li><li>TaskGroup</li><li>actor</li><li>MainActor</li><li>Combine</li><li>GCD</li><li>OperationQueue</li></ul></dd>
+          <dt>音视频</dt>
+          <dd><ul class="chips"><li>AVFoundation</li><li>AVPlayer</li><li>AVAssetResourceLoaderDelegate</li><li>AVAudioSession</li><li>CallKit</li><li>视频压缩</li><li>加密流式播放</li><li>音频路由</li></ul></dd>
+          <dt>数据与网络</dt>
+          <dd><ul class="chips"><li>WCDB</li><li>GRDB</li><li>Core Data</li><li>CloudKit</li><li>URLSession</li><li>WebSocket</li></ul></dd>
+          <dt>系统能力</dt>
+          <dd><ul class="chips"><li>APNs</li><li>Notification Service Extension</li><li>Share Extension</li><li>App Groups</li><li>Keychain</li><li>WKWebView</li><li>JavaScript Bridge</li></ul></dd>
+          <dt>安全（协议集成）</dt>
+          <dd><ul class="chips"><li>公私钥身份</li><li>签名验签</li><li>ECDH 密钥协商</li><li>消息加密</li></ul></dd>
+          <dt>工程与质量</dt>
+          <dd><ul class="chips"><li>Swift Package Manager</li><li>CocoaPods</li><li>Xcode Cloud</li><li>GitHub Actions</li><li>XCTest</li><li>SwiftLint</li><li>Instruments</li><li>包体积治理</li></ul></dd>
+          <dt>AI 研发</dt>
+          <dd><ul class="chips"><li>Codex</li><li>Claude Code</li><li>Agent Skills</li><li>LLM 工具调用</li><li>AI 代码审查</li></ul></dd>
+        </dl>
       </section>
+
       <section id="education">
         <h2>教育与语言</h2>
-        <p>电子科技大学 · 软件工程本科。</p>
-        <p>中文用于工作沟通与技术文档。日语 JLPT N2。英语可阅读技术文档及代码。</p>
+        <p>电子科技大学 · 软件工程本科（2013—2017）</p>
+        <p>中文：工作沟通与技术文档 · 日语：JLPT N2 · 英语：技术文档与代码阅读</p>
       </section>
       <footer><a href="#top">返回顶部 ↑</a></footer>
     </main>

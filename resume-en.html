@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jack Ma | Career Profile</title>
-  <meta name="description" content="Career profile of Jack Ma, covering iOS architecture, cross-platform delivery, video performance, and AI engineering.">
+  <meta name="description" content="Career profile of Jack Ma: zero-to-one iOS launches and architecture, audio, video and performance, mobile team leadership, and AI engineering.">
   <link rel="canonical" href="https://jack--ma.github.io/resume-en.html">
   <link rel="alternate" hreflang="ja" href="https://jack--ma.github.io/resume-ja.html">
   <link rel="alternate" hreflang="zh-CN" href="https://jack--ma.github.io/resume-zh.html">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Jack Ma | Career Profile">
-  <meta property="og:description" content="Career profile of Jack Ma, covering iOS architecture, cross-platform delivery, video performance, and AI engineering.">
+  <meta property="og:description" content="Career profile of Jack Ma: zero-to-one iOS launches and architecture, audio, video and performance, mobile team leadership, and AI engineering.">
   <meta property="og:url" content="https://jack--ma.github.io/resume-en.html">
   <meta property="og:image" content="https://jack--ma.github.io/share-card.png">
   <meta property="og:image:width" content="1200">
@@ -54,78 +54,267 @@
     <aside>
       <nav aria-label="Contents">
         <p>Contents</p>
-        <a href="#profile">Summary</a>
+        <a href="#strengths">Strengths</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Personal Project</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education and Languages</a>
+        <div class="toc-sub">
+          <a href="#no-4">No.4 Messaging app</a>
+          <a href="#no-3">No.3 Social app</a>
+          <a href="#no-2">No.2 Video creation</a>
+          <a href="#no-1">No.1 Content features</a>
+        </div>
+        <a href="#projects">Personal project</a>
+        <a href="#skills">Tech stack</a>
+        <a href="#education">Education and languages</a>
       </nav>
     </aside>
     <main id="main" tabindex="-1">
       <header class="intro">
         <h1>Jack Ma</h1>
         <p class="role">Senior iOS Engineer · Mobile Engineering Lead</p>
-        <p class="location">Japan</p>
+        <p class="meta">8+ years in mobile development · 5 years with Swift · Based in Japan</p>
+        <p class="jump"><a href="#experience">Jump to experience ↓</a></p>
       </header>
-      <section id="profile">
-        <h2>Summary</h2>
-        <p>Senior iOS engineer with 8+ years in mobile development and 5 years with Swift. Specialize in iOS architecture, audio and video, and performance. Led a messaging app’s iOS launch and cut conversation list refresh time by 70% in app measurements. At ByteDance, reduced peak memory use during 4K video compression by 60%.</p>
+
+      <section id="strengths">
+        <h2><span id="profile"></span>Strengths</h2>
+        <div class="strengths">
+          <div class="strength">
+            <h3>Zero-to-one iOS launches and architecture</h3>
+            <ul>
+              <li>Led technology selection, project setup, and core development; shipped the first release about eight months after project setup</li>
+              <li>Extracted shared SDKs with Swift protocols and dependency injection, reused across apps</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>Audio, video, and performance</h3>
+            <ul>
+              <li>Cut encrypted video time to first frame from 8.7 s to 0.7 s (local comparison)</li>
+              <li>Cut conversation list refresh time by 70% (measured in the app)</li>
+              <li>Reduced peak memory during 4K compression by 60%; the editing SDK team adopted the fix</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>Engineering efficiency</h3>
+            <ul>
+              <li>Cut Xcode Cloud time from task start to successful archive by 40% (CocoaPods → Swift Package Manager)</li>
+              <li>Reduced IPA size by over 10 MB and added a merge check that blocks oversized increases</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>Team leadership (4-person mobile team / 5–6 iOS engineers)</h3>
+            <ul>
+              <li>Own requirement breakdown, scheduling, and iOS and Android releases</li>
+              <li>Set bi-monthly technical plans; mentored four new hires and helped two new grads pass probation</li>
+            </ul>
+          </div>
+          <div class="strength">
+            <h3>AI engineering</h3>
+            <ul>
+              <li>Built an SDK change review Skill and evaluated its findings against past changes</li>
+              <li>Building Daynest solo, with LLM tool calling that saves entries only after user confirmation</li>
+            </ul>
+          </div>
+        </div>
       </section>
+
       <section id="experience">
         <h2>Experience</h2>
-        <article class="resume-entry">
-          <h3>Software Company in Japan</h3>
-          <p>2023–Present · Mobile Engineering Lead / iOS Engineer</p>
-          <p>Lead delivery across iOS and Android for a four-person team.</p>
-          <ul>
-            <li><strong>iOS launch and shared SDKs.</strong> Led native iOS development from technology selection to the first App Store release, about eight months from project setup. Used Swift protocols and dependency injection to separate feature dependencies from app configuration, and extracted SDKs reused across apps.</li>
-            <li><strong>Conversation list performance.</strong> Cut conversation list refresh time by 70% in app measurements with batched WCDB reads, first-screen preloading, and cached message previews.</li>
-            <li><strong>Encrypted video playback.</strong> Cut time to first frame from 8.7 to 0.7 seconds in a local comparison. Reworked the media SDK to decrypt and play chunks as they download.</li>
-            <li><strong>Build time.</strong> Cut the time from Xcode Cloud task start to successful archive by 40% by helping move dependencies from CocoaPods to Swift Package Manager.</li>
-            <li><strong>Incoming calls on multiple devices.</strong> Made incoming calls stop ringing on other devices as soon as one device answered. Designed the initial signaling sequence, implemented it on iOS, and coordinated with Android and backend engineers.</li>
-          </ul>
-        </article>
-        <article class="resume-entry">
-          <h3>ByteDance · Xigua Video</h3>
-          <p>Jul 2017–Sep 2022 · iOS Engineer → Senior iOS Engineer</p>
-          <ul>
-            <li><strong>Video publishing.</strong> Cut the time from opening the publish screen to upload completion by 50% under normal network conditions. Ran compression and upload in parallel and persisted tasks so processing could continue after leaving the screen and uploads could resume after relaunch.</li>
-            <li><strong>4K compression.</strong> Reduced peak memory use during 4K compression by 60%. Used Instruments and the editing SDK source to trace the out-of-memory issue, then validated a device-specific fix that the SDK team adopted.</li>
-            <li><strong>Creator tools.</strong> Split editing and publishing into separate components for standalone development and debugging. Designed a shared undo and redo model that subsequent editing features could use.</li>
-            <li><strong>Team leadership.</strong> Led a team of five to six iOS engineers, set technical plans, and managed assignments and schedules. Mentored four new hires and helped two new-grad hires pass probation.</li>
-          </ul>
-        </article>
-        <article class="resume-entry">
-          <h3>Philips · Connected Device Apps</h3>
-          <p>Jan–Sep 2016 · iOS Engineering Intern</p>
-          <p>Developed features and adapted iPhone and iPad layouts for apps that accompanied an air quality monitor and a baby food maker.</p>
-        </article>
+
+        <div class="company">
+          <h3>Software company in Japan<span>Aug 2023–Present</span></h3>
+          <div class="jobs">
+            <details class="job" id="no-4" open>
+              <summary>
+                <span class="job-no">No.4</span>
+                <span class="job-title">Messaging app · iOS launch and mobile delivery</span>
+                <span class="job-meta"><span class="role-tag">Mobile Engineering Lead / iOS</span><span>Swift · AVFoundation · WCDB</span><span>First release in about eight months; 70% shorter conversation list refresh time</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>Period</h4>
+                <p>2024–Present</p>
+                <h4>Team</h4>
+                <p>Four mobile engineers (two iOS, two Android). I lead delivery on both platforms and work as an iOS engineer.</p>
+                <h4>Responsibilities</h4>
+                <ul>
+                  <li>Technology selection, project setup, and core development for the native iOS app</li>
+                  <li>Requirement breakdown, assignments, and scheduling; testing, fixes, and releases on both platforms</li>
+                  <li>Reference implementations and code review to keep module boundaries consistent</li>
+                </ul>
+                <h4>Technical highlights</h4>
+                <ul>
+                  <li><strong>Architecture.</strong> Swift protocols and dependency injection separate feature dependencies from app configuration; shared SDKs are reused across apps</li>
+                  <li><strong>Conversation list.</strong> 70% shorter refresh time (measured in the app)
+                    <ul>
+                      <li>Replaced per-conversation queries with batched WCDB reads, first-screen preloading, and cached summaries</li>
+                      <li>In a test with 1,000 simulated conversations, SQL queries fell from 3,000 to 36</li>
+                    </ul>
+                  </li>
+                  <li><strong>Encrypted video.</strong> Time to first frame cut from 8.7 s to 0.7 s (local comparison, capped at 16 Mbps)
+                    <ul>
+                      <li><code>AVAssetResourceLoaderDelegate</code> maps the player’s byte-range requests to encrypted chunks and decrypts as data downloads</li>
+                      <li>Data downloaded before the first frame fell from 16.1 MB to 1.1 MB</li>
+                    </ul>
+                  </li>
+                  <li><strong>Audio and video calls.</strong> Built the first calling release solo on the Daily SDK; fixed switching between earpiece, speaker, and AirPods with the system audio route picker; maintain CallKit integration</li>
+                  <li><strong>Calls on multiple devices.</strong> Designed the initial signaling and worked with Android and backend engineers so other devices stop ringing once one answers</li>
+                  <li><strong>Concurrency.</strong> <code>TaskGroup</code> limits concurrent attachment uploads; an <code>actor</code> isolates publishing state</li>
+                  <li><strong>Build and quality.</strong> Drove the CocoaPods → Swift Package Manager migration, cutting Xcode Cloud time from task start to successful archive by 40%; set up automated PR checks for the main app and seven component repositories</li>
+                </ul>
+                <h4>Environment</h4>
+                <ul class="chips">
+                  <li>Swift</li><li>UIKit</li><li>Combine</li><li>Swift Concurrency</li><li>AVFoundation</li><li>CallKit</li><li>Daily SDK</li><li>WCDB</li><li>WebSocket</li><li>Swift Package Manager</li><li>Xcode Cloud</li><li>GitHub Actions</li><li>Codex</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="job" id="no-3">
+              <summary>
+                <span class="job-no">No.3</span>
+                <span class="job-title">Social app · React Native development</span>
+                <span class="job-meta"><span class="role-tag">Mobile Engineer</span><span>React Native</span><span>Feature development after joining</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>Period</h4>
+                <p>From Aug 2023 (first months after joining)</p>
+                <h4>Team</h4>
+                <p>iOS, Android, and web engineers worked on the product together.</p>
+                <h4>Responsibilities</h4>
+                <ul>
+                  <li>Feature development for a React Native social app</li>
+                  <li>Moved to native development of the messaging app (No.4) after the product changed direction</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="company">
+          <h3>ByteDance · Xigua Video<span>Jul 2017–Sep 2022 (intern from Feb 2017)</span></h3>
+          <div class="jobs">
+            <details class="job" id="no-2" open>
+              <summary>
+                <span class="job-no">No.2</span>
+                <span class="job-title">Video creation and publishing · Publishing system, editing, componentization</span>
+                <span class="job-meta"><span class="role-tag">Senior iOS Engineer → Team Lead</span><span>Objective-C · Swift · AVFoundation</span><span>50% shorter publishing time; 60% lower peak memory in 4K compression</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>Period</h4>
+                <p>Mar 2019–Sep 2022</p>
+                <h4>Team</h4>
+                <p>Creator-side iOS team of five to six engineers, including me. Led the team in the later period.</p>
+                <h4>Responsibilities</h4>
+                <ul>
+                  <li>Owned the video publishing system and creator-tool componentization; contributed to editing features</li>
+                  <li>Drafted bi-monthly technical plans and managed assignments and schedules within the team</li>
+                  <li>Mentored four new hires and helped two new-grad hires pass probation</li>
+                </ul>
+                <h4>Technical highlights</h4>
+                <ul>
+                  <li><strong>Faster publishing.</strong> Ran compression and upload in parallel, cutting the time from opening the publish screen to upload completion by 50% under normal network conditions</li>
+                  <li><strong>Persistent tasks.</strong> Processing continues after leaving the screen, and uploads resume after relaunch</li>
+                  <li><strong>4K memory.</strong> 60% lower peak memory
+                    <ul>
+                      <li>Traced the out-of-memory issue with Instruments and the editing SDK source, then varied processing by device memory capacity</li>
+                      <li>Validated in an A/B comparison; the SDK team adopted the fix</li>
+                    </ul>
+                  </li>
+                  <li><strong>Componentization.</strong> Editing and publishing components run standalone through a host bridge and sample app; precompiled components reduce redundant compilation</li>
+                  <li><strong>Editing model.</strong> Designed an Action / Revert undo and redo model, built with the team and reused by later editing features</li>
+                </ul>
+                <h4>Environment</h4>
+                <ul class="chips">
+                  <li>Objective-C</li><li>Swift</li><li>UIKit</li><li>AVFoundation</li><li>Instruments</li><li>CocoaPods</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="job" id="no-1">
+              <summary>
+                <span class="job-no">No.1</span>
+                <span class="job-title">Content features · Bullet comments, follow, app size</span>
+                <span class="job-meta"><span class="role-tag">iOS Engineer</span><span>Objective-C</span><span>Built bullet comments solo; IPA size down by over 10 MB</span></span>
+              </summary>
+              <div class="job-body">
+                <h4>Period</h4>
+                <p>Jul 2017–Feb 2019</p>
+                <h4>Technical highlights</h4>
+                <ul>
+                  <li><strong>Bullet comments (danmaku).</strong> Designed and built the player’s bullet comments solo; relative speeds determine catch-up times to prevent overlaps in a lane</li>
+                  <li><strong>Follow module.</strong> Built reusable article and video lists and a follow module that keeps follow state in sync across screens</li>
+                  <li><strong>App size.</strong> Main owner; IPA size down by over 10 MB
+                    <ul>
+                      <li>6 MB from image deduplication and compression; 4 MB from dead-code removal and component optimization</li>
+                      <li>Adapted an existing Ruby tool that uses <code>otool</code> to analyze Mach-O binaries, adding product-specific filters to list likely unused classes and methods</li>
+                      <li>Added a size-increase check to the merge flow that blocks changes above the threshold</li>
+                    </ul>
+                  </li>
+                </ul>
+                <h4>Environment</h4>
+                <ul class="chips">
+                  <li>Objective-C</li><li>UIKit</li><li>Ruby</li><li>otool</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <p class="early">Earlier: Philips (Jan–Sep 2016, iOS engineering intern). Developed features and adapted iPhone and iPad layouts for companion apps to an air quality monitor and a baby food maker.</p>
       </section>
+
       <section id="projects">
-        <h2>Personal Project</h2>
-        <article class="resume-entry">
-          <h3>Daynest · SwiftUI Personal Finance App</h3>
-          <p>Since 2026 · Unreleased</p>
-          <ul>
-            <li>Owned requirements, architecture, and acceptance as the sole developer. Built the iPhone and iPad app in SwiftUI, with GRDB for offline bookkeeping and CloudKit for cross-device sync.</li>
-            <li>Integrated OpenAI Responses API tool calling for natural-language queries and bill recognition from images and PDFs. Users confirm drafts before saving, and both AI and manual entries use the same validation and transaction flow, with operation receipts to prevent duplicates on retry.</li>
-          </ul>
-        </article>
+        <h2>Personal project</h2>
+        <details class="job" open>
+          <summary>
+            <span class="job-no">Solo</span>
+            <span class="job-title">Daynest · SwiftUI personal finance app</span>
+            <span class="job-meta"><span class="role-tag">Sole developer</span><span>SwiftUI · GRDB · CloudKit</span><span>Since Oct 2026 · Unreleased</span></span>
+          </summary>
+          <div class="job-body">
+            <h4>Responsibilities</h4>
+            <p>Requirements, architecture, implementation, and acceptance as the sole developer.</p>
+            <h4>Technical highlights</h4>
+            <ul>
+              <li><strong>Native.</strong> SwiftUI for iPhone and iPad, GRDB for offline bookkeeping, CloudKit for cross-device sync</li>
+              <li><strong>AI bookkeeping.</strong> OpenAI Responses API tool calling for natural-language queries and bill recognition from images and PDFs</li>
+              <li><strong>Write safety.</strong> Confirmed drafts go through the same validation and transaction as manual entries; operation receipts prevent duplicates on retry</li>
+              <li><strong>AI-assisted workflow.</strong> Codex for implementation, <code>AGENTS.md</code> and project Skills for self-review and UI regression checks, Claude Code PR reviews in GitHub Actions</li>
+            </ul>
+            <h4>Environment</h4>
+            <ul class="chips">
+              <li>Swift</li><li>SwiftUI</li><li>GRDB</li><li>CloudKit</li><li>OpenAI Responses API</li><li>Codex</li><li>Claude Code</li><li>GitHub Actions</li>
+            </ul>
+          </div>
+        </details>
       </section>
+
       <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>iOS Development:</strong> Swift, Objective-C, UIKit, SwiftUI, Combine</li>
-          <li><strong>Architecture and Concurrency:</strong> Modular design, shared SDKs, dependency injection, Swift Concurrency, GCD</li>
-          <li><strong>Networking and Storage:</strong> URLSession, WebSocket, WCDB, GRDB, CloudKit</li>
-          <li><strong>Media and Performance:</strong> AVFoundation, CallKit, video compression, audio routing, Instruments</li>
-          <li><strong>Engineering and AI:</strong> Swift Package Manager, XCTest, GitHub Actions, Codex, Claude Code, Agent Skills, LLM tool calling</li>
-        </ul>
+        <h2>Tech stack</h2>
+        <dl class="skill-grid">
+          <dt>Languages and UI</dt>
+          <dd><ul class="chips"><li>Swift</li><li>Objective-C</li><li>UIKit</li><li>SwiftUI</li><li>Auto Layout</li></ul></dd>
+          <dt>Architecture</dt>
+          <dd><ul class="chips"><li>MVVM</li><li>Modular design</li><li>Protocol-based decoupling</li><li>Dependency injection</li><li>Shared SDK design</li><li>API compatibility</li></ul></dd>
+          <dt>Concurrency</dt>
+          <dd><ul class="chips"><li>async/await</li><li>TaskGroup</li><li>actor</li><li>MainActor</li><li>Combine</li><li>GCD</li><li>OperationQueue</li></ul></dd>
+          <dt>Audio and video</dt>
+          <dd><ul class="chips"><li>AVFoundation</li><li>AVPlayer</li><li>AVAssetResourceLoaderDelegate</li><li>AVAudioSession</li><li>CallKit</li><li>Video compression</li><li>Encrypted streaming</li><li>Audio routing</li></ul></dd>
+          <dt>Data and networking</dt>
+          <dd><ul class="chips"><li>WCDB</li><li>GRDB</li><li>Core Data</li><li>CloudKit</li><li>URLSession</li><li>WebSocket</li></ul></dd>
+          <dt>System integration</dt>
+          <dd><ul class="chips"><li>APNs</li><li>Notification Service Extension</li><li>Share Extension</li><li>App Groups</li><li>Keychain</li><li>WKWebView</li><li>JavaScript bridge</li></ul></dd>
+          <dt>Security (protocol integration)</dt>
+          <dd><ul class="chips"><li>Key-pair identity</li><li>Signing and verification</li><li>ECDH key agreement</li><li>Message encryption</li></ul></dd>
+          <dt>Build and quality</dt>
+          <dd><ul class="chips"><li>Swift Package Manager</li><li>CocoaPods</li><li>Xcode Cloud</li><li>GitHub Actions</li><li>XCTest</li><li>SwiftLint</li><li>Instruments</li><li>App size optimization</li></ul></dd>
+          <dt>AI engineering</dt>
+          <dd><ul class="chips"><li>Codex</li><li>Claude Code</li><li>Agent Skills</li><li>LLM tool calling</li><li>AI code review</li></ul></dd>
+        </dl>
       </section>
+
       <section id="education">
-        <h2>Education and Languages</h2>
-        <p>Bachelor’s degree in Software Engineering, University of Electronic Science and Technology of China.</p>
-        <p>Chinese for workplace communication and technical writing. Japanese JLPT N2. English for reading technical documentation and source code.</p>
+        <h2>Education and languages</h2>
+        <p>University of Electronic Science and Technology of China · B.Eng. in Software Engineering (2013–2017)</p>
+        <p>Chinese: workplace communication and technical writing · Japanese: JLPT N2 · English: technical documentation and source code</p>
       </section>
       <footer><a href="#top">Back to top ↑</a></footer>
     </main>

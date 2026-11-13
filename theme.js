@@ -31,3 +31,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+const openTarget = (hash = location.hash) => {
+  let id = '';
+  try {
+    id = decodeURIComponent(hash.slice(1));
+  } catch {
+    return;
+  }
+  if (!id) return;
+  const target = document.getElementById(id);
+  const card = target && target.closest('details');
+  if (card && !card.open) {
+    card.open = true;
+    target.scrollIntoView();
+  }
+};
+window.addEventListener('hashchange', () => openTarget());
+document.addEventListener('DOMContentLoaded', () => {
+  openTarget();
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (link) openTarget(link.getAttribute('href'));
+  });
+});
+
+let closedBeforePrint = [];
+window.addEventListener('beforeprint', () => {
+  closedBeforePrint = [...document.querySelectorAll('details:not([open])')];
+  closedBeforePrint.forEach((d) => { d.open = true; });
+});
+window.addEventListener('afterprint', () => {
+  closedBeforePrint.forEach((d) => { d.open = false; });
+  closedBeforePrint = [];
+});
